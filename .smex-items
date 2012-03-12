@@ -1,0 +1,36 @@
+
+;; ----- smex-history -----
+(
+ package-install
+ linum-mode
+ eval-buffer
+ visual-line-mode
+ goto-line
+ line-number-mode
+ shell
+)
+
+;; ----- smex-data -----
+(
+ (package-install . 7)
+ (previous-line . 1)
+ (move-end-of-line . 1)
+ (move-beginning-of-line . 1)
+ (undo . 1)
+ (server-start . 2)
+ (search-backward . 1)
+ (shell . 6)
+ (lisp-mode . 1)
+ (clojure-mode . 1)
+ (clojure-jack-in . 13)
+ (kill-word . 1)
+ (right-word . 2)
+ (load-theme . 2)
+ (kill-line . 1)
+ (line-number-mode . 2)
+ (goto-line . 1)
+ (visual-line-mode . 2)
+ (eval-buffer . 2)
+ (linum-mode . 1)
+ (rainbow-delimiters-mode . 1)
+)
