@@ -1,36 +1,51 @@
 
 ;; ----- smex-history -----
 (
- package-install
- linum-mode
- eval-buffer
- visual-line-mode
+ kill-line
  goto-line
- line-number-mode
  shell
+ js-mode
+ fundamental-mode
+ package-install
+ package-list-packages-no-fetch
 )
 
 ;; ----- smex-data -----
 (
- (package-install . 7)
+ (package-install . 15)
  (previous-line . 1)
  (move-end-of-line . 1)
  (move-beginning-of-line . 1)
  (undo . 1)
  (server-start . 2)
  (search-backward . 1)
- (shell . 6)
+ (shell . 15)
  (lisp-mode . 1)
  (clojure-mode . 1)
  (clojure-jack-in . 13)
- (kill-word . 1)
+ (kill-word . 3)
  (right-word . 2)
- (load-theme . 2)
- (kill-line . 1)
+ (load-theme . 4)
+ (kill-line . 2)
  (line-number-mode . 2)
- (goto-line . 1)
+ (goto-line . 3)
  (visual-line-mode . 2)
  (eval-buffer . 2)
- (linum-mode . 1)
+ (linum-mode . 2)
  (rainbow-delimiters-mode . 1)
+ (whitespace-mode . 7)
+ (whitespace-cleanup . 1)
+ (find-tag . 1)
+ (gnus . 1)
+ (dired . 3)
+ (dired-do-rename . 1)
+ (rename-buffer . 3)
+ (haml-mode . 3)
+ (package-list-packages-no-fetch . 2)
+ (load-file . 2)
+ (haml-indent-line . 1)
+ (javascript-mode . 1)
+ (dired-do-copy . 1)
+ (fundamental-mode . 1)
+ (js-mode . 1)
 )

@@ -3,9 +3,25 @@
 	     '("marmalade" . "http://marmalade-repo.org/packages/") t)
 (add-to-list 'custom-theme-load-path "~/.emacs.d/themes/")
 (add-hook 'clojure-mode-hook 'rainbow-delimiters-mode)
-(linum-mode 1)
+(global-linum-mode 1)
 (load-theme 'solarized-light t)
 (package-initialize)
+
+(dolist
+    (hooksym '(clojure-mode-hook
+               emacs-lisp-mode-hook
+               js-mode-hook
+               ruby-mode-hook
+               ))
+  (add-hook hooksym
+            (lambda ()
+              (local-set-key (kbd "C-m") 'newline-and-indent)
+              )))
+
+(add-hook 'js-mode-hook
+          (lambda ()
+            (setq js-indent-level 4)))
+
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
