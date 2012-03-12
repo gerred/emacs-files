@@ -1,9 +1,0 @@
-(ns gerred.views.main
-  (:require [gerred.views.common :as common]
-            [noir.content.getting-started])
-  (:use [noir.core :only [defpage]]
-        [hiccup.core :only [html]]))
-
-(defpage "/" []
-  (common/layout
-   [:h1 "I'm Gerred."]))
